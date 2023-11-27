@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Cadastro de Alunos"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/nome"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edtDataNascimento"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/data_nascimento"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/telefone"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/edtObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/objetivo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/genero"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/feminino" />
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="@string/masculino" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botao_verde"
+        android:text="@string/enviar"
+        android:textColor="@android:color/white" />
+</LinearLayout>
