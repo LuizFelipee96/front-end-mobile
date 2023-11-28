@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Treino"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNomeExercicio"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/botao_branco"
+        android:padding="12dp"
+        android:hint="Nome do Exercício"/>
+
+    <EditText
+        android:id="@+id/edtQuantidadeSeries"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/botao_branco"
+        android:padding="12dp"
+        android:hint="Quantidade de Séries"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtNumeroRepeticoes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/botao_branco"
+        android:padding="12dp"
+        android:hint="Número de Repetições"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edtObservacoes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/botao_branco"
+        android:padding="12dp"
+        android:hint="Observações"
+        android:inputType="textMultiLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ToggleButton
+            android:id="@+id/toggleMonday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Seg"
+            android:textOff="Seg"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:id="@+id/toggleTuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Ter"
+            android:textOff="Ter"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:id="@+id/toggleWednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Qua"
+            android:textOff="Qua"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:id="@+id/toggleThursday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Qui"
+            android:textOff="Qui"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:id="@+id/toggleFriday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Sex"
+            android:textOff="Sex"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviarTreino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_verde"
+        android:text="Enviar"
+        android:textColor="@android:color/white" />
+</LinearLayout>
