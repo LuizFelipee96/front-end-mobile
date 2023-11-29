@@ -102,6 +102,64 @@
             android:checked="false"/>
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grupos Musculares"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioButtonPeitoral"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Peitoral"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonTriceps"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Triceps"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonDorsal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Dorsal"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonBiceps"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Biceps"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonPernas"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Pernas"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonOmbros"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:text="Ombros"/>
+
+    </RadioGroup>
+
     <Button
         android:id="@+id/btnEnviarTreino"
         android:layout_width="match_parent"
