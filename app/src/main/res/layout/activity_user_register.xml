@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título do Cadastro -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro do Personal"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Campo de Nome -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Campo de E-mail -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Campo de Senha -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Campo de Repetir Senha -->
+    <EditText
+        android:id="@+id/editTextRepeatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Repetir Senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botão de Cadastro -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botao_verde"
+        android:text="Cadastrar" />
+
+</LinearLayout>
