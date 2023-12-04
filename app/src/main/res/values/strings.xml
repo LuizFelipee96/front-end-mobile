@@ -4,7 +4,6 @@
     <string name="password">Senha</string>
     <string name="login">Acessar</string>
     <string name="register_prompt">Não tem conta? Clique aqui para se registrar.</string>
-
     <string name="nome">Nome</string>
     <string name="email">Email</string>
     <string name="data_nascimento">Data de Nascimento</string>
