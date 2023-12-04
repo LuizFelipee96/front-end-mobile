@@ -88,3 +88,4 @@
         android:text="@string/enviar"
         android:textColor="@android:color/white" />
 </LinearLayout>
+
