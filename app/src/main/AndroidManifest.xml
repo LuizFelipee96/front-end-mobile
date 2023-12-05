@@ -25,6 +25,7 @@
         </activity>
 
         <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".UserRegisterActivity" android:exported="true" />
 
 
     </application>

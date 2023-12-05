@@ -58,14 +58,17 @@
         app:layout_constraintTop_toBottomOf="@id/password" />
 
     <!-- Link de Registro -->
-    <TextView
-        android:id="@+id/register_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register_prompt"
-        android:textColor="@color/link_color"
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

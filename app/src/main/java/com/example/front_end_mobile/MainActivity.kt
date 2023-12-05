@@ -1,5 +1,6 @@
 package com.example.front_end_mobile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -27,6 +28,12 @@ class MainActivity : ComponentActivity() {
 
             login(email, password)
         }
+        val registerButton = findViewById<Button>(R.id.register_button)
+        registerButton.setOnClickListener {
+            val intent = Intent(this, UserRegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun login(email: String, password: String) {
@@ -37,7 +44,7 @@ class MainActivity : ComponentActivity() {
                     val user = auth.currentUser
                     // Navegue para a próxima tela ou atualize a UI
                 } else {
-                    Toast.makeText(baseContext, "Autenticação falhou.",
+                    Toast.makeText(baseContext, "Autenticação falhou. Tente novamente",
                         Toast.LENGTH_SHORT).show()
                 }
             }
