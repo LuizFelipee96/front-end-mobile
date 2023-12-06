@@ -56,6 +56,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
     implementation("com.google.firebase:firebase-auth")
+    implementation("androidx.appcompat:appcompat:1.4.1")
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.android.material:material:1.4.0")

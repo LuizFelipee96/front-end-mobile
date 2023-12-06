@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Login bem-sucedido, atualizar a UI com as informações do usuário
+                    // Login bem-sucedido, depois atualizar a UI com as informações do usuário
                     val user = auth.currentUser
                     // Navegue para a próxima tela ou atualize a UI
                 } else {
