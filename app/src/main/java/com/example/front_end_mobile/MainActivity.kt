@@ -21,19 +21,18 @@ class MainActivity : ComponentActivity() {
         val usernameEditText = findViewById<EditText>(R.id.username)
         val passwordEditText = findViewById<EditText>(R.id.password)
         val loginButton = findViewById<Button>(R.id.login_button)
+        val registerButton = findViewById<Button>(R.id.register_button)
 
         loginButton.setOnClickListener {
             val email = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
-
             login(email, password)
         }
-        val registerButton = findViewById<Button>(R.id.register_button)
+
         registerButton.setOnClickListener {
             val intent = Intent(this, UserRegisterActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     private fun login(email: String, password: String) {
@@ -42,8 +41,11 @@ class MainActivity : ComponentActivity() {
                 if (task.isSuccessful) {
                     // Login bem-sucedido, depois atualizar a UI com as informações do usuário
                     val user = auth.currentUser
-                    // Navegue para a próxima tela ou atualize a UI
+                    // Navegue para AddTreinoActivity após o sucesso do login
+                    val intent = Intent(this, AddTreinoActivity::class.java)
+                    startActivity(intent)
                 } else {
+                    // Exibir uma mensagem de erro se o login falhar
                     Toast.makeText(baseContext, "Autenticação falhou. Tente novamente",
                         Toast.LENGTH_SHORT).show()
                 }
