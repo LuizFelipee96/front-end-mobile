@@ -39,13 +39,11 @@ class MainActivity : ComponentActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    // Login bem-sucedido, depois atualizar a UI com as informações do usuário
                     val user = auth.currentUser
-                    // Navegue para AddTreinoActivity após o sucesso do login
+                    // Navegação para a tela seguinte
                     val intent = Intent(this, AddTreinoActivity::class.java)
                     startActivity(intent)
                 } else {
-                    // Exibir uma mensagem de erro se o login falhar
                     Toast.makeText(baseContext, "Autenticação falhou. Tente novamente",
                         Toast.LENGTH_SHORT).show()
                 }

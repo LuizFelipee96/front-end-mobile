@@ -12,7 +12,6 @@
         android:layout_marginBottom="30dp"
         android:src="@drawable/logo" />
 
-    <!-- Botão para Adicionar Aluno -->
     <Button
         android:id="@+id/btnAdicionarAluno"
         android:layout_width="match_parent"

@@ -8,7 +8,6 @@
     android:background="#29728E"
     tools:ignore="MissingClass">
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="257dp"
@@ -57,7 +56,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
-    <!-- Link de Registro -->
     <Button
         android:id="@+id/register_button"
         android:layout_width="128dp"

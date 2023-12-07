@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
 
-    <!-- RecyclerView para a Lista de Treinos -->
+    <!-- RecyclerView/ModelView para a Lista de Treinos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewTreinos"
         android:layout_width="match_parent"

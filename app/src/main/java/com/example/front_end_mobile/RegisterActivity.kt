@@ -53,8 +53,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun validarDados(email: String, password: String): Boolean {
-        // Implemente aqui a validação de dados
-        // Exemplo: Verificar se o email é válido, se a senha tem no mínimo 6 caracteres, etc.
+        // Depois implementar para verificar se o email é válido, se a senha tem no mínimo 6 caracteres, etc.
         return true
     }
 }

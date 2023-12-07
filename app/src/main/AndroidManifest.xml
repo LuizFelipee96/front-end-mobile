@@ -24,7 +24,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Adicionando a nova Activity AddTreinoActivity -->
         <activity
             android:name=".AddTreinoActivity"
             android:exported="false" />
