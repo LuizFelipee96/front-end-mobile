@@ -13,6 +13,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
+        android:textColor="#64CCC5"
         android:layout_marginBottom="16dp"/>
 
     <EditText
@@ -20,34 +21,60 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@drawable/botao_branco"
-        android:padding="12dp"
-        android:hint="Nome do Aluno"/>
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Nome do Aluno"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
 
     <EditText
         android:id="@+id/edtNomeExercicio"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/botao_branco"
-        android:padding="12dp"
-        android:hint="Nome do Exercício"/>
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:hint="Nome do Exercício"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
 
     <EditText
         android:id="@+id/edtQuantidadeSeries"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/botao_branco"
-        android:padding="12dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:hint="Quantidade de Séries"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
 
     <EditText
         android:id="@+id/edtNumeroRepeticoes"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/botao_branco"
-        android:padding="12dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:hint="Número de Repetições"
-        android:inputType="number"/>
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:textColorHint="#A5A5A5"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,48 +141,48 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radioButtonPeitoral"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Peitoral"
-        android:layout_marginBottom="4dp"/>
+        <RadioButton
+            android:id="@+id/radioButtonPeitoral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:text="Peitoral" />
 
-    <RadioButton
-        android:id="@+id/radioButtonTriceps"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Triceps"/>
+        <RadioButton
+            android:id="@+id/radioButtonTriceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Triceps" />
 
-    <RadioButton
-        android:id="@+id/radioButtonDorsal"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Dorsal"/>
+        <RadioButton
+            android:id="@+id/radioButtonDorsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Dorsal" />
 
-    <RadioButton
-        android:id="@+id/radioButtonBiceps"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Biceps"/>
+        <RadioButton
+            android:id="@+id/radioButtonBiceps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Biceps" />
 
-    <RadioButton
-        android:id="@+id/radioButtonPernas"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Pernas"/>
+        <RadioButton
+            android:id="@+id/radioButtonPernas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Pernas" />
 
-    <RadioButton
-        android:id="@+id/radioButtonOmbros"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:padding="8dp"
-        android:text="Ombros"/>
+        <RadioButton
+            android:id="@+id/radioButtonOmbros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Ombros" />
 
     </RadioGroup>
 
@@ -163,7 +190,9 @@
         android:id="@+id/btnEnviarTreino"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/botao_verde"
-        android:text="Enviar"
-        android:textColor="@android:color/white" />
+        android:layout_marginTop="20dp"
+    android:background="@drawable/botao_verde"
+    android:text="Enviar"
+    android:textColor="@android:color/white" />
+
 </LinearLayout>

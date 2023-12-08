@@ -12,7 +12,9 @@
         android:text="Cadastro do Personal"
         android:gravity="center"
         android:textSize="24sp"
+        android:textColor="#64CCC5"
         android:layout_marginBottom="24dp"/>
+
 
     <EditText
         android:id="@+id/editTextNameUser"

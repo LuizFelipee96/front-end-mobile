@@ -13,10 +13,11 @@
         android:src="@drawable/logo" />
 
     <TextView
-        android:layout_width="253dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="Cadastro de Alunos"
+        android:textColor="#64CCC5"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -56,7 +57,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="3dp"
         android:text="@string/genero"
         android:textSize="18sp" />
 

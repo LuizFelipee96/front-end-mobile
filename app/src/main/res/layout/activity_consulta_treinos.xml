@@ -6,12 +6,23 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Título -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consultar Treinos"
+        android:textColor="#64CCC5"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Barra de Pesquisa -->
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesquisar Treinos"
+        android:paddingBottom="15dp"
         android:layout_marginBottom="16dp"/>
 
     <!-- RecyclerView/ModelView para a Lista de Treinos -->
@@ -19,5 +30,36 @@
         android:id="@+id/recyclerViewTreinos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:divider="?android:attr/dividerHorizontal"
+        android:dividerHeight="1dp" />
+
+    <!-- Botões de Ação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botão Adicionar Novo Treino -->
+        <Button
+            android:id="@+id/btnAddTreino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4285F4"
+            android:text="Adicionar Novo"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Botão Filtrar -->
+        <Button
+            android:id="@+id/btnFiltrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#757575"
+            android:text="Filtrar"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
 </LinearLayout>
