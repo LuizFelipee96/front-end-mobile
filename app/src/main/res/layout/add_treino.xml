@@ -137,6 +137,7 @@
         android:layout_marginBottom="8dp"/>
 
     <RadioGroup
+        android:id="@+id/radioGroupMuscular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -191,8 +192,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-    android:background="@drawable/botao_verde"
-    android:text="Enviar"
-    android:textColor="@android:color/white" />
+        android:background="@drawable/botao_verde"
+        android:text="Enviar"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnConsultarTreinos"
+        android:layout_width="174dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botao_verde"
+        android:text="Consultar Treinos"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
