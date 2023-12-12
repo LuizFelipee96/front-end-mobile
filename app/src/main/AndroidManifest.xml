@@ -25,16 +25,20 @@
         </activity>
         <activity
             android:name=".AddTreinoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".RegisterActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".UserRegisterActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".ConsultaTreinosActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme"/>
 
     </application>
 
