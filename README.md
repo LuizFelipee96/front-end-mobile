@@ -47,7 +47,7 @@ O controlador atua como um intermediário entre o modelo e a visão. Ele lida co
 
 
 
-**Banco de dados(MongoDB):**
+**Banco de dados(Firebase):**
 
 Vai ser interligado o Firebase com o modelo do MVC.
 
