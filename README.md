@@ -14,7 +14,7 @@
 
 O modelo representa os dados e a lógica de negócios da aplicação.
 
-1.Usuário: Representa os dados do usuário, como nome, idade, altura, peso, etc,
+1.Usuário: Representa os dados do usuário.
 
 2.Plano de Treinamento: Define o plano de treinamento de um usuário, incluindo detalhes como a quantidade de treinos semanais, exercícios, séries, repetições, etc,
 
@@ -49,10 +49,7 @@ O controlador atua como um intermediário entre o modelo e a visão. Ele lida co
 
 **Banco de dados(MongoDB):**
 
-Vai ser interligado o MongoDB com o modelo do MVC. Será desenvolvido em C#.
-
-
-<img src="https://github.com/ErickGoldberg/Mobile-Project/blob/main/mvc.jpg" width="800" />
+Vai ser interligado o Firebase com o modelo do MVC.
 
 ## Figma:
 
@@ -60,9 +57,9 @@ https://www.figma.com/file/nLnugohYCctA1FeORPwvRr/mobile_project?type=design&nod
 
 ## Requisitos do App:
 
-1. O aplicativo deve registrar o progresso dos treinos, incluindo o número de repetições, peso, tempo gasto, etc.
+1. O aplicativo deve registrar o progresso dos treinos, incluindo o número de repetições, peso, tetc.
 
-2. O aplicativo deve permitir criar e editar seu perfil, incluindo informações como idade, peso, altura, metas de condicionamento físico, etc.
+2. O aplicativo deve permitir criar e editar seu perfil.
 
 3. O aplicativo deve manter as informações do usuário, incluindo detalhes pessoais e histórico de treinos, todas armazenadas com segurança e protegidas contra acesso não autorizado.
    
