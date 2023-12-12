@@ -25,7 +25,7 @@
         android:paddingBottom="15dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- RecyclerView/ModelView para a Lista de Treinos -->
+    <!-- RecyclerView para a Lista de Treinos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewTreinos"
         android:layout_width="match_parent"
@@ -40,17 +40,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <!-- Botão Adicionar Novo Treino -->
-        <Button
-            android:id="@+id/btnAddTreino"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#4285F4"
-            android:text="Adicionar Novo"
-            android:textColor="@android:color/white"
-            android:layout_marginEnd="8dp"/>
 
         <!-- Botão Filtrar -->
         <Button

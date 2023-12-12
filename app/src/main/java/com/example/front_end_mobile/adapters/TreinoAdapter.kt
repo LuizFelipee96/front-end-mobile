@@ -1,4 +1,4 @@
-package adapters
+package com.example.front_end_mobile.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.front_end_mobile.Treino
 import com.example.front_end_mobile.R
 
-
-class TreinoAdapter(private var treinos: List<Treino>) : RecyclerView.Adapter<TreinoAdapter.TreinoViewHolder>() {
+class TreinoAdapter(private var treinos: List<Treino> = listOf()) : RecyclerView.Adapter<TreinoAdapter.TreinoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TreinoViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.add_treino, parent, false)
@@ -28,8 +27,12 @@ class TreinoAdapter(private var treinos: List<Treino>) : RecyclerView.Adapter<Tr
     }
 
     class TreinoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val nomeAlunoTextView: TextView = itemView.findViewById(R.id.edtNomeAluno)
+        // Outros elementos da UI, se necessário
+
         fun bind(treino: Treino) {
-            // data to UI
+            nomeAlunoTextView.text = treino.nomeAluno
+            // Associe outros dados de 'treino' a elementos da UI conforme necessário
         }
     }
 }

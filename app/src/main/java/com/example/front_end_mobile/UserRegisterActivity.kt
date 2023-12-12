@@ -60,9 +60,9 @@ class UserRegisterActivity : AppCompatActivity() {
             databaseReference.child(it).setValue(user)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(this, "Informações adicionais salvas com sucesso", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Cadastro feito com sucesso", Toast.LENGTH_SHORT).show()
                     } else {
-                        Toast.makeText(this, "Erro ao salvar informações: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Erro ao criar cadastro!!: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
