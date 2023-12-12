@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Título -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +15,6 @@
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
 
-    <!-- Barra de Pesquisa -->
     <EditText
         android:id="@+id/edtSearch"
         android:layout_width="match_parent"
@@ -25,23 +23,34 @@
         android:paddingBottom="15dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- RecyclerView para a Lista de Treinos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewTreinos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp"
-        android:divider="?android:attr/dividerHorizontal"
-        android:dividerHeight="1dp" />
+        android:padding="8dp" />
 
-    <!-- Botões de Ação -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvEmptyListMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhum treino disponível"
+        android:visibility="gone"
+        android:gravity="center"
+        android:padding="16dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!-- Botão Filtrar -->
         <Button
             android:id="@+id/btnFiltrar"
             android:layout_width="0dp"
