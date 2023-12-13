@@ -2,9 +2,9 @@
 
 ## Objetivo:
 - Criar uma aplicação mobile que cadastra treinos de academia baseado em quantidade de treinos semanais do usuário
--  As tecnologias usadas foram: Kotlin, C# e Mongo Db
+-  As tecnologias usadas foram: Kotlin, Mongo Db
 -  Segue o padrão MVC: Model(Data), View(front-end) e Controller.
--  A api possuí o método POST para cadastrar uma lista de exercicios baseado no tipo de treino, um método GET para pegar todos os os treinos do usuário e outro método GET para pegar um treino específico, um método PUT para caso o usuário queira mudar algo no treino e um método DELETE se quiser deletar o treino.
+-  O projeto possuí o método POST para cadastrar uma lista de exercicios baseado no tipo de treino, um método GET para pegar todos os os treinos do usuário e outro método GET para pegar um treino específico, um método PUT para caso o usuário queira mudar algo no treino e um método DELETE se quiser deletar o treino.
 -  A api também possui função de cadastrar usuários e fazer login.
 
 ## Arquitetura MVC:
@@ -30,8 +30,6 @@ A visão é responsável por apresentar os dados ao usuário e receber entradas 
 2.Telas de cadastro de treinos,
 
 3.Telas de listagem de treinos,
-
-4.Telas para exibir detalhes do plano de treinamento.
 
 
 
