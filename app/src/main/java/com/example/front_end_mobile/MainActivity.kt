@@ -24,9 +24,13 @@ class MainActivity : ComponentActivity() {
         val registerButton = findViewById<Button>(R.id.register_button)
 
         loginButton.setOnClickListener {
-            val email = usernameEditText.text.toString()
-            val password = passwordEditText.text.toString()
-            login(email, password)
+            val email = usernameEditText.text.toString().trim()
+            val password = passwordEditText.text.toString().trim()
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                login(email, password)
+            } else {
+                Toast.makeText(baseContext, "Por favor, preencha todos os campos", Toast.LENGTH_SHORT).show()
+            }
         }
 
         registerButton.setOnClickListener {
@@ -44,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     val intent = Intent(this, AddTreinoActivity::class.java)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(baseContext, "Autenticação falhou. Tente novamente",
+                    Toast.makeText(baseContext, "Usuário ou senha inválido. Tente novamente",
                         Toast.LENGTH_SHORT).show()
                 }
             }
