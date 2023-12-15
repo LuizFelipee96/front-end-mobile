@@ -1,5 +1,6 @@
 package com.example.front_end_mobile
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -61,6 +62,9 @@ class UserRegisterActivity : AppCompatActivity() {
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "Cadastro feito com sucesso", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
                     } else {
                         Toast.makeText(this, "Erro ao criar cadastro!!: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                     }
