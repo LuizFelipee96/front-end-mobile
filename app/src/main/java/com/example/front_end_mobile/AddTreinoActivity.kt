@@ -1,18 +1,23 @@
 package com.example.front_end_mobile
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Toast
+import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
-import android.content.Intent
 
 data class Treino(
-    val nomeAluno: String,
-    val nomeExercicio: String,
-    val quantidadeSeries: Int,
-    val numeroRepeticoes: Int,
-    val diasDaSemana: List<String>,
-    val grupoMuscular: String
+    val nomeAluno: String? = null,
+    val nomeExercicio: String? = null,
+    val quantidadeSeries: Int? = null,
+    val numeroRepeticoes: Int? = null,
+    val diasDaSemana: List<String?>? = null,
+    val grupoMuscular: String?= null
 )
 
 class AddTreinoActivity : AppCompatActivity() {
