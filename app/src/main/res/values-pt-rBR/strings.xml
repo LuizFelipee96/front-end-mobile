@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">front-end-mobile</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="login">Acessar</string>
+    <string name="register_prompt">Não tem conta? Clique aqui para se registrar.</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="data_nascimento">Data de Nascimento</string>
+    <string name="telefone">Telefone</string>
+    <string name="objetivo">Objetivo</string>
+    <string name="genero">Gênero</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="enviar">Enviar</string>
+    <string name="adicionar_aluno">Adicionar Aluno</string>
+</resources>

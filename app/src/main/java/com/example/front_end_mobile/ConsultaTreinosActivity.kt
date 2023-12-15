@@ -26,7 +26,7 @@ class ConsultaTreinosActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         // Observa mudanças nos dados e atualiza o RecyclerView
-        treinoViewModel.getTreinos().observe(this, { treinos ->
+        treinoViewModel.getTreinos()?.observe(this, { treinos ->
             adapter.updateTreinos(treinos) // Aqui foi feita a alteração
         })
     }
