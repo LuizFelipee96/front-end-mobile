@@ -37,6 +37,18 @@ class UserRegisterActivity : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.editTextPasswordUser).text.toString().trim()
         val repeatPassword = findViewById<EditText>(R.id.editTextRepeatPasswordUser).text.toString().trim()
 
+        // Verifica se a senha tem pelo menos 6 caracteres
+        if (password.length < 6) {
+            Toast.makeText(this, "A senha deve ter pelo menos 6 caracteres.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // Verifica se a senha contém pelo menos 1 caractere especial
+        if (!password.contains(Regex("[^A-Za-z0-9]"))) {
+            Toast.makeText(this, "A senha deve conter pelo menos 1 caractere especial.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
         if (password != repeatPassword) {
             Toast.makeText(this, "As senhas não são iguais.", Toast.LENGTH_SHORT).show()
             return
