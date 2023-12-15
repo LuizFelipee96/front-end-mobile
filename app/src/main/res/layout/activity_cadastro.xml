@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,41 +24,21 @@
         android:id="@+id/edtNome"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="@string/nome"/>
+        android:hint="@string/nome" />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtIdade"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"/>
-
-    <EditText
-        android:id="@+id/edtDataNascimento"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="@string/data_nascimento"
-        android:inputType="date"/>
-
-    <EditText
-        android:id="@+id/edtTelefone"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="@string/telefone"
-        android:inputType="phone"/>
-
-    <EditText
-        android:id="@+id/edtObjetivo"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="@string/objetivo"/>
+        android:hint="@string/idade"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:layout_marginTop="8dp"
         android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="3dp"
         android:text="@string/genero"
         android:textSize="18sp" />
 

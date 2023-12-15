@@ -1,5 +1,6 @@
 package com.example.front_end_mobile
 
+import android.util.Log
 import android.os.Bundle
 import android.widget.RadioGroup
 import android.widget.Button
@@ -18,26 +19,27 @@ class RegisterActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-        val nomeEditText = findViewById<EditText>(R.id.edtNome)
-        val emailEditText = findViewById<EditText>(R.id.edtEmail)
-        val dataNascimentoEditText = findViewById<EditText>(R.id.edtDataNascimento)
-        val telefoneEditText = findViewById<EditText>(R.id.edtTelefone)
-        val objetivoEditText = findViewById<EditText>(R.id.edtObjetivo)
-        val generoRadioGroup = findViewById<RadioGroup>(R.id.radioGroupGenero)
-        val enviarButton = findViewById<Button>(R.id.btnEnviar)
-
-        enviarButton.setOnClickListener {
-            val email = emailEditText.text.toString().trim()
-            val dataNascimento = dataNascimentoEditText.text.toString().trim()
-            val telefone = telefoneEditText.text.toString().trim()
-            val objetivo = objetivoEditText.text.toString().trim()
-            val generoId = generoRadioGroup.checkedRadioButtonId
-            val genero = when (generoId) {
-                R.id.radioFeminino -> "Feminino"
-                R.id.radioMasculino -> "Masculino"
-                else -> "" // ou algum valor padrão ou tratamento de erro
-            }
-        }
+//        val nomeEditText = findViewById<EditText>(R.id.edtNome)
+////        val emailEditText = findViewById<EditText>(R.id.edtEmail)
+//        val dataNascimentoEditText = findViewById<EditText>(R.id.edtDataNascimento)
+////        val telefoneEditText = findViewById<EditText>(R.id.edtTelefone)
+////        val objetivoEditText = findViewById<EditText>(R.id.edtObjetivo)
+//        val generoRadioGroup = findViewById<RadioGroup>(R.id.radioGroupGenero)
+//        val enviarButton = findViewById<Button>(R.id.btnEnviar)
+//
+//        enviarButton.setOnClickListener {
+////            val email = emailEditText.text.toString().trim()
+////            val dataNascimento = dataNascimentoEditText.text.toString().trim()
+////            val telefone = telefoneEditText.text.toString().trim()
+////            val objetivo = objetivoEditText.text.toString().trim()
+//            val generoId = generoRadioGroup.checkedRadioButtonId
+//            val genero = when (generoId) {
+//                R.id.radioFeminino -> "Feminino"
+//                R.id.radioMasculino -> "Masculino"
+//                else -> "" // ou algum valor padrão ou tratamento de erro
+//            }
+//            Log.i("hi lorena", "message")
+//        }
     }
 
     private fun criarConta(email: String, password: String) {
@@ -54,6 +56,6 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun validarDados(email: String, password: String): Boolean {
         // Depois implementar para verificar se o email é válido, se a senha tem no mínimo 6 caracteres, etc.
-        return true
+        return email.isNotEmpty() && password.isNotEmpty()
     }
 }

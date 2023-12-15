@@ -33,6 +33,11 @@ class AddTreinoActivity : AppCompatActivity() {
             val intent = Intent(this, ConsultaTreinosActivity::class.java)
             startActivity(intent)
         }
+
+        findViewById<Button>(R.id.btnFluxoALunos).setOnClickListener {
+            val intent = Intent(this, ListarAlunoActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun enviarTreino() {

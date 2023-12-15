@@ -39,6 +39,14 @@
             android:name=".ConsultaTreinosActivity"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".CadastroAlunoActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".ListarAlunoActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
 
     </application>
 
