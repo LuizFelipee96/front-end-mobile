@@ -1,209 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cadastro de Treino"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#64CCC5"
-        android:layout_marginBottom="16dp"/>
-
-    <EditText
-        android:id="@+id/edtNomeAluno"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@drawable/botao_branco"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Nome do Aluno"
-        android:inputType="text"
-        android:imeOptions="actionNext"
-        android:textColorHint="#A5A5A5"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif"/>
-
-    <EditText
-        android:id="@+id/edtNomeExercicio"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/botao_branco"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Nome do Exercício"
-        android:inputType="text"
-        android:imeOptions="actionNext"
-        android:textColorHint="#A5A5A5"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif"/>
-
-    <EditText
-        android:id="@+id/edtQuantidadeSeries"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/botao_branco"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Quantidade de Séries"
-        android:inputType="number"
-        android:imeOptions="actionNext"
-        android:textColorHint="#A5A5A5"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif"/>
-
-    <EditText
-        android:id="@+id/edtNumeroRepeticoes"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/botao_branco"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:hint="Número de Repetições"
-        android:inputType="number"
-        android:imeOptions="actionDone"
-        android:textColorHint="#A5A5A5"
-        android:textSize="16sp"
-        android:fontFamily="sans-serif"/>
-
-
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <ToggleButton
-            android:id="@+id/toggleMonday"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="Seg"
-            android:textOff="Seg"
-            android:checked="false"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Cadastro de Treino"
+            android:textColor="#64CCC5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <ToggleButton
-            android:id="@+id/toggleTuesday"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="Ter"
-            android:textOff="Ter"
-            android:checked="false"/>
+        <EditText
+            android:id="@+id/edtNomeAluno"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:hint="Nome do Aluno"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
 
-        <ToggleButton
-            android:id="@+id/toggleWednesday"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="Qua"
-            android:textOff="Qua"
-            android:checked="false"/>
+        <EditText
+            android:id="@+id/edtNomeExercicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:hint="Nome do Exercício"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
 
-        <ToggleButton
-            android:id="@+id/toggleThursday"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="Qui"
-            android:textOff="Qui"
-            android:checked="false"/>
+        <EditText
+            android:id="@+id/edtQuantidadeSeries"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:hint="Quantidade de Séries"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
 
-        <ToggleButton
-            android:id="@+id/toggleFriday"
-            android:layout_width="0dp"
+        <EditText
+            android:id="@+id/edtNumeroRepeticoes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/botao_branco"
+            android:fontFamily="sans-serif"
+            android:hint="Número de Repetições"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textOn="Sex"
-            android:textOff="Sex"
-            android:checked="false"/>
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleMonday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="Seg"
+                android:textOn="Seg" />
+
+            <ToggleButton
+                android:id="@+id/toggleTuesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="Ter"
+                android:textOn="Ter" />
+
+            <ToggleButton
+                android:id="@+id/toggleWednesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="Qua"
+                android:textOn="Qua" />
+
+            <ToggleButton
+                android:id="@+id/toggleThursday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="Qui"
+                android:textOn="Qui" />
+
+            <ToggleButton
+                android:id="@+id/toggleFriday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="Sex"
+                android:textOn="Sex" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Grupos Musculares"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMuscular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonPeitoral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:padding="8dp"
+                android:text="Peitoral" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTriceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Triceps" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDorsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Dorsal" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBiceps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Biceps" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPernas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Pernas" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOmbros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Ombros" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnEnviarTreino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botao_verde"
+            android:text="Enviar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnConsultarTreinos"
+            android:layout_width="174dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao_verde"
+            android:text="Consultar Treinos"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnFluxoALunos"
+            android:layout_width="174dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botao_verde"
+            android:text="Alunos"
+            android:textColor="@android:color/white" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Grupos Musculares"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"/>
-
-    <RadioGroup
-        android:id="@+id/radioGroupMuscular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RadioButton
-            android:id="@+id/radioButtonPeitoral"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:padding="8dp"
-            android:text="Peitoral" />
-
-        <RadioButton
-            android:id="@+id/radioButtonTriceps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Triceps" />
-
-        <RadioButton
-            android:id="@+id/radioButtonDorsal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Dorsal" />
-
-        <RadioButton
-            android:id="@+id/radioButtonBiceps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Biceps" />
-
-        <RadioButton
-            android:id="@+id/radioButtonPernas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Pernas" />
-
-        <RadioButton
-            android:id="@+id/radioButtonOmbros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Ombros" />
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnEnviarTreino"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/botao_verde"
-        android:text="Enviar"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/btnConsultarTreinos"
-        android:layout_width="174dp"
-        android:layout_height="22dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/botao_verde"
-        android:text="Consultar Treinos"
-        android:textColor="@android:color/white" />
-
-</LinearLayout>
+</ScrollView>

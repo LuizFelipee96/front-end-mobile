@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:background="@drawable/botao_branco"
+    android:layout_marginBottom="8dp"
+    android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/edtNomeAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColorHint="#A5A5A5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edtSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="16dp"
+            android:textColorHint="#A5A5A5"
+            android:paddingBottom="16dp"
+            android:textSize="16sp" />
+</LinearLayout>
