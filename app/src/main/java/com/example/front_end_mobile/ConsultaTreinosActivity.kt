@@ -46,10 +46,10 @@ class ConsultaTreinosActivity : AppCompatActivity() {
 
         // Configura o botão "Dicas de Suplemento"
         val btnDicasSuplemento = findViewById<Button>(R.id.btnDicasSuplemento)
-        btnDicasSuplemento.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View) {
-                // logic
-            }
-        })
+        btnDicasSuplemento.setOnClickListener {
+            val intent = Intent(this, DicasSuplementosActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 }
