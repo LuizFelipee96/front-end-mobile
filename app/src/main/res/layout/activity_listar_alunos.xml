@@ -22,8 +22,6 @@
         android:layout_weight="1"
         android:padding="8dp" />
 
-
-
     <TextView
         android:id="@+id/tvEmptyListMessage"
         android:layout_width="match_parent"

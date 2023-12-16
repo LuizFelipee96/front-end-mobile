@@ -25,7 +25,7 @@ class TreinoViewModel : ViewModel() {
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
-                    // Tratar o erro
+                    // Tratar erro
                 }
             }
             databaseReference.addValueEventListener(listener)
@@ -33,6 +33,5 @@ class TreinoViewModel : ViewModel() {
         } ?: run {
             return null
         }
-
     }
 }

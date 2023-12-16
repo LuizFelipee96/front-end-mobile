@@ -20,7 +20,7 @@
                 android:layout_width="430dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Recomendaçâo de Suplementaçâo"
+                android:text="Dicas de Suplementaçâo"
                 android:textColor="#64CCC5"
                 android:textSize="22sp"
                 android:textStyle="bold" />

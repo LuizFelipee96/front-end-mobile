@@ -133,7 +133,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="8dp"
             android:text="Grupos Musculares"
             android:textSize="18sp" />
@@ -194,29 +194,35 @@
             android:id="@+id/btnEnviarTreino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/botao_verde"
             android:text="Enviar"
             android:textColor="@android:color/white" />
 
-        <Button
-            android:id="@+id/btnConsultarTreinos"
-            android:layout_width="174dp"
-            android:layout_height="22dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/botao_verde"
-            android:text="Consultar Treinos"
-            android:textColor="@android:color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
 
-        <Button
-            android:id="@+id/btnFluxoALunos"
-            android:layout_width="174dp"
-            android:layout_height="22dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/botao_verde"
-            android:text="Alunos"
-            android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/btnConsultarTreinos"
+                android:layout_width="174dp"
+                android:layout_height="22dp"
+                android:background="@drawable/botao_verde"
+                android:text="Consultar Treinos"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnFluxoALunos"
+                android:layout_width="174dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/botao_verde"
+                android:text="Alunos"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

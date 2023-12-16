@@ -11,7 +11,7 @@ import com.example.front_end_mobile.R
 class TreinoAdapter(private var treinos: List<Treino> = listOf()) : RecyclerView.Adapter<TreinoAdapter.TreinoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TreinoViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.add_treino, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_treino, parent, false)
         return TreinoViewHolder(view)
     }
 
@@ -28,10 +28,17 @@ class TreinoAdapter(private var treinos: List<Treino> = listOf()) : RecyclerView
 
     class TreinoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val nomeAlunoTextView: TextView = itemView.findViewById(R.id.edtNomeAluno)
+        private val nomeExercicioTextView: TextView = itemView.findViewById(R.id.edtNomeExercicio)
+        private val quantidadeSeriesTextView: TextView = itemView.findViewById(R.id.edtQuantidadeSeries)
+        private val numeroRepeticoesTextView: TextView = itemView.findViewById(R.id.edtNumeroRepeticoes)
         // Outros elementos da UI, se necessário
 
         fun bind(treino: Treino) {
-            nomeAlunoTextView.text = treino.nomeAluno
+            nomeAlunoTextView.text = "Aluno: ${treino.nomeAluno}"
+            nomeExercicioTextView.text = "Exercício: ${treino.nomeExercicio}"
+            quantidadeSeriesTextView.text = "Séries: ${treino.quantidadeSeries}"
+            numeroRepeticoesTextView.text = "Repetições: ${treino.numeroRepeticoes}"
+
             // Associe outros dados de 'treino' a elementos da UI conforme necessário
         }
     }

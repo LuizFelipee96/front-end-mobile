@@ -47,7 +47,11 @@
             android:name=".ListarAlunoActivity"
             android:exported="true"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".DicasSuplementosActivity"
+            android:exported="true"
+            android:label="Dicas de Suplementação"
+            android:theme="@style/AppTheme"/>
 
     </application>
-
 </manifest>
